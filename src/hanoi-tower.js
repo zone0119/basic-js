@@ -15,8 +15,15 @@ const { NotImplementedError } = require('../extensions/index.js');
  *
  */
 function calculateHanoi(/* disksNumber, turnsSpeed */) {
-  throw new NotImplementedError('Not implemented');
-  // remove line with error and write your code here
+
+    const  t = Math.pow(2, disksNumber) - 1;
+  //Количество перекладываний в зависимости от количества колец вычисляется по формуле 2^{n}-1.
+  const  sec = Math.floor(t /(turnsSpeed / 3600));
+  
+  return {
+    turns: t,
+    seconds: sec
+  };
 }
 
 module.exports = {
