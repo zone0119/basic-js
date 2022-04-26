@@ -50,7 +50,7 @@ if (arr.length === 0) return arr;
       narr.push(arr[i]);
      }
    }
-   return narr;emove line with error and write your code here
+   return narr;
 }
 
 module.exports = {
