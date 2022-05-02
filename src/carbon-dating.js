@@ -21,6 +21,9 @@ function dateSample(sampleActivity) {
   //throw new NotImplementedError('Not implemented');
   // remove line with error and write your code here
   
+    if(!(Number.isInteger(sampleActivity))) {
+      return false;
+    }
   
    if(typeof sampleActivity !== "string") {
     return false;
